@@ -16,6 +16,7 @@ header {
   top: 0;
   z-index: 100;
 }
+
 #heroArtworkDiv {
   position: relative;
   z-index: 0;
@@ -229,6 +230,10 @@ h1 {
 #boxLinkDiv {
   flex-basis: 20%;
   text-align: center;
+  position: sticky;
+  align-self: flex-start;
+  top: 38px;
+  overflow-y: auto;
 }
 
 #linkTitle {
