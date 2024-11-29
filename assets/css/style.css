@@ -145,6 +145,8 @@ h1 {
 #mainBox1 .article .articleNumber {
   color: #d7d8d8;
   font-weight: bold;
+  font-size: 34px;
+  margin: 20px;
 }
 
 #mainBox1 .article .articleTitle {
@@ -209,10 +211,11 @@ h1 {
 }
 
 .newsReadingTime .newsAltWord {
-  color: black;
-  background-color: #a6a6a6;
+  color: #6c7180;
+  background-color: #f2f3f3;
   border-radius: 24px;
-  padding: 6px;
+  padding: 10px 8px;
+  font-weight: bold;
 }
 
 #mainBox2 {
