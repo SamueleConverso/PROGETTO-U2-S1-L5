@@ -37,3 +37,20 @@ window.addEventListener("scroll", function () {
 //   newWords[ranNum].replace("M", "");
 //   gElems.setAttribute("aria-label", "ciao");
 // }, 1000);
+
+const gElems = document.querySelectorAll('g[stroke-linecap="butt"]');
+
+function extractG() {
+  let ranNum = Math.floor(Math.random() * gElems.length);
+  const currentG = gElems[ranNum];
+  return currentG;
+}
+
+setInterval(function () {
+  const extractedG = extractG();
+  if (extractedG.getAttribute("opacity") === "0") {
+    extractedG.setAttribute("opacity", "1");
+  } else {
+    extractedG.setAttribute("opacity", "0");
+  }
+}, 100);
