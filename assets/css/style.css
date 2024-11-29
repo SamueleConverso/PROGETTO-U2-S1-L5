@@ -1,0 +1,244 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #ffc017;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  padding: 10px 100px 10px 100px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+#heroArtworkDiv {
+  position: relative;
+  z-index: 0;
+}
+
+header nav {
+  flex-basis: 50%;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+header nav ul li {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+header #logoDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 50%;
+}
+
+header nav ul #btnLi {
+  color: white;
+  background-color: black;
+  padding: 4px 12px 4px 12px;
+  border-radius: 16px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Spectral", serif;
+  font-weight: normal;
+  font-size: 88px;
+}
+
+#heroDiv {
+  display: flex;
+  justify-content: center;
+  background-color: #ffc017;
+  padding: 10px 0px 10px 100px;
+  border-bottom: 2px solid black;
+  max-height: 25vh;
+}
+
+#heroTextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#heroDiv #heroTextDiv {
+  flex-basis: 100%;
+}
+
+#btnHeroP {
+  width: fit-content;
+  color: white;
+  background-color: black;
+  border-radius: 16px;
+  padding: 4px 12px 4px 12px;
+}
+
+#trendingDiv {
+  padding-left: 100px;
+}
+
+#trendingDiv img,
+#trendingDiv p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#mainBox1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.article {
+  width: fit-content;
+  display: flex;
+  font-size: 24px;
+  flex-basis: 33.33%;
+  min-height: 300px;
+}
+
+.article .articleNumber {
+  margin-right: 10px;
+}
+
+.otherTextDiv {
+  float: right;
+}
+
+#mainBox1 .article .otherTextDiv span img {
+  border-radius: 50%;
+  max-width: 20px;
+  vertical-align: middle;
+}
+
+#mainBox1 .article .otherTextDiv .logoSpan {
+  margin-right: 10px;
+}
+
+#mainBox1 .article .otherTextDiv .articleReadingTime span img {
+  border-radius: 50%;
+  max-width: 20px;
+  vertical-align: middle;
+}
+
+#mainBox1 .article .otherTextDiv .articleReadingTime .starSpan {
+  margin-left: 10px;
+}
+
+#mainBox1 .article .author {
+  padding-bottom: 10px;
+}
+
+#mainBox1 .article .articleNumber {
+  color: #d7d8d8;
+  font-weight: bold;
+}
+
+#mainBox1 .article .articleTitle {
+  font-weight: bold;
+}
+
+#mainBox1 .article .otherTextDiv .articleReadingTime {
+  font-weight: 300;
+}
+
+.newsDiv {
+  display: flex;
+  font-size: 0;
+  margin-bottom: 48px;
+  max-width: 80vw;
+  min-width: 50vw;
+}
+
+.news {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 24px;
+  margin-right: 24px;
+}
+
+.news .newsNumber {
+  margin-right: 10px;
+}
+
+.newsOtherTextDiv {
+  float: right;
+}
+
+#mainBox2 .news span img {
+  border-radius: 50%;
+  max-width: 50px;
+  vertical-align: middle;
+}
+
+.newsTitle {
+  font-weight: bold;
+}
+
+.newsAuthor,
+.newsTitle,
+.newsBody,
+.newsReadingTime {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.newsReadingTime {
+  font-weight: 300;
+}
+
+.newsReadingTime .newsAltWord {
+  color: black;
+  background-color: #a6a6a6;
+  border-radius: 24px;
+  padding: 6px;
+}
+
+#mainBox2 {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 48px;
+}
+
+#newsBox {
+  flex-basis: 80%;
+}
+
+#boxLinkDiv {
+  flex-basis: 20%;
+  margin-left: 30px;
+  text-align: center;
+}
+
+#linkTitle {
+  font-weight: bold;
+}
+
+#pulsantiBianchi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+
+#pulsantiBianchi p {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 10px;
+  font-weight: 300;
+}
