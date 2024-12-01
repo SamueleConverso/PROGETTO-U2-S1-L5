@@ -1,8 +1,9 @@
+//Gestione della navbar
 const header = document.getElementById("header");
 const heroDiv = document.getElementById("heroDiv");
 const btnLi = document.getElementById("btnLi");
 window.addEventListener("scroll", function () {
-  if (window.scrollY > heroDiv.offsetHeight) {
+  if (window.scrollY >= heroDiv.offsetHeight) {
     header.style.backgroundColor = "white";
     btnLi.style.backgroundColor = "#1a8917";
   } else {
@@ -11,38 +12,19 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// const htmlElem = document.querySelector("[aria-label]");
-//const gElems = document.querySelectorAll("g");
-// const words = htmlElem.getAttribute("aria-label");
-// const mChars = `M M M M M M M M M M M M M M
-//             M M M M M M M M M M M M M M M M M M M M M
-//            M M M M M M M M M M M M M M M M M M M M M M M M M
-//             M M M M M M M M M M M M
-//             M M M M M M M M M M M M M M M M M M M
-//             M M M M M M M M M M M M M M M M M M M M M
-//             M M M M M M M M M M M M M M
-//            M M M M M M M M M M M M M M M M M
-//            M M M M M M M M M M M M M M M M M M M
-//             M M M M M M M M M M M M M M M M M M M M M M M
-//            M M M M M M M M M M M M
-//             M M M M M M M M M M M M
-//             M M M M M M M M M M M M M M M M M M M M M
-//             M M M M M M M M M M M
-//             M M M M M M M M M M M M M M M M M
-//             M M M M M M M M M M M M M M M M`;
-
-// setInterval(function () {
-//   let newWords = words;
-//   let ranNum = Math.floor(Math.random() * newWords.length);
-//   newWords[ranNum].replace("M", "");
-//   gElems.setAttribute("aria-label", "ciao");
-// }, 1000);
-
+//Gestione delle "M" nella sezione hero
 const gElems = document.querySelectorAll('g[stroke-linecap="butt"]');
+const gFiltered = [];
+
+gElems.forEach((g) => {
+  if (g.querySelector("path") !== null) {
+    gFiltered.push(g);
+  }
+});
 
 function extractG() {
-  let ranNum = Math.floor(Math.random() * gElems.length);
-  const currentG = gElems[ranNum];
+  let ranNum = Math.floor(Math.random() * gFiltered.length);
+  const currentG = gFiltered[ranNum];
   return currentG;
 }
 
@@ -50,7 +32,7 @@ setInterval(function () {
   const extractedG = extractG();
   if (extractedG.getAttribute("opacity") === "0") {
     extractedG.setAttribute("opacity", "1");
-  } else {
+  } else if (extractedG.getAttribute("opacity") === "1") {
     extractedG.setAttribute("opacity", "0");
   }
-}, 100);
+}, 125);
