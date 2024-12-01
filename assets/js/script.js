@@ -2,6 +2,7 @@
 const header = document.getElementById("header");
 const heroDiv = document.getElementById("heroDiv");
 const btnLi = document.getElementById("btnLi");
+
 window.addEventListener("scroll", function () {
   if (window.scrollY >= heroDiv.offsetHeight) {
     header.style.backgroundColor = "white";
