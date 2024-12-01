@@ -36,4 +36,4 @@ setInterval(function () {
   } else if (extractedG.getAttribute("opacity") === "1") {
     extractedG.setAttribute("opacity", "0");
   }
-}, 125);
+}, 250);
