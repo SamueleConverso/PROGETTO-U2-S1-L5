@@ -265,3 +265,125 @@ h1 {
 #actualLinks a {
   margin-right: 30px;
 }
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 54px;
+  }
+
+  header {
+    padding: 10px 50px 10px 50px;
+  }
+
+  nav ul {
+    font-size: 12px;
+  }
+
+  #heroDiv {
+    padding-left: 50px;
+  }
+
+  #trendingDiv {
+    padding-left: 50px;
+  }
+
+  #mainBox1 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #mainBox1 .article .articleNumber {
+    margin-left: 0px;
+  }
+
+  .article {
+    font-size: 14px;
+    flex-basis: 50%;
+  }
+
+  #boxLinkDiv {
+    position: unset;
+    flex-basis: 100%;
+    margin-bottom: 24px;
+  }
+
+  #pulsantiBianchi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px;
+    text-align: center;
+    font-size: 16px;
+  }
+  #actualLinks a {
+    margin-right: 15px;
+  }
+
+  #mainBox2 {
+    flex-wrap: wrap-reverse;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .newsImg img {
+    width: 100%;
+  }
+
+  .newsImg {
+    align-self: center;
+  }
+
+  #newsBox {
+    flex-basis: 100%;
+  }
+
+  .news {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header {
+    padding: 10px 25px 10px 25px;
+  }
+
+  .hideLi {
+    display: none;
+  }
+
+  header nav ul {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  #heroDiv {
+    padding-left: 25px;
+  }
+
+  #heroArtworkDiv {
+    display: none;
+  }
+
+  #trendingDiv {
+    padding-left: 25px;
+  }
+
+  #mainBox1 {
+    padding: 0px 25px;
+    flex-direction: column;
+  }
+
+  .article {
+    width: fit-content;
+    flex-basis: 100%;
+    min-height: unset;
+  }
+
+  #mainBox1 .article .articleNumber {
+    margin-left: 0px;
+  }
+
+  #mainBox2 {
+    padding: 0px 25px;
+  }
+}
